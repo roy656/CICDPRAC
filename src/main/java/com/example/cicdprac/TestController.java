@@ -9,7 +9,7 @@ public class TestController {
 
     @GetMapping("/api/check")
     public String checkTest() {
-        return "OK!!!!!!";
+        return "OK!!!!";
     }
 
 }
