@@ -12,8 +12,4 @@ public class TestController {
         return "OK!!!!!";
     }
 
-    @PostMapping("/api/postcheck")
-    public void post(RequestDto requestDto) {
-
-    }
 }
