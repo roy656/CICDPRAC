@@ -13,7 +13,7 @@ public class TestController {
     }
 
     @PostMapping("/api/postcheck")
-    public void post() {
+    public void post(RequestDto requestDto) {
 
     }
 }
