@@ -4,7 +4,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/cicdprac # 프로젝트 이름
+    destination: /home/ubuntu/cicdprac
     overwrite: yes
 
 permissions:
