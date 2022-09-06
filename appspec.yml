@@ -1,7 +1,7 @@
 # appspec.yml
 
 version: 0.0
-os: ubuntu
+os: linux
 files:
   - source: /
     destination: /home/ec2-user/cicdprac/ # 프로젝트 이름
