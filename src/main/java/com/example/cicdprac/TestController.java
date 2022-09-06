@@ -1,5 +1,6 @@
 package com.example.cicdprac;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,14 +14,17 @@ public class TestController {
         this.articleService = articleService;
     }
 
-    @GetMapping("/api/check")
-    public String checkTest() {
-        return "OK!!!";
+    @Value("${logging-module.version}")
+    private String version;
+
+    @GetMapping("/")
+    public String version() {
+        return String.format("Project Version : %s", version);
     }
 
-    @PostMapping("/api/article")
-    public void creatArticle(RequestDto requestDto) {
-        articleService.creatArticle(requestDto);
+    @GetMapping("/health")
+    public String checkHealth() {
+        return "healthy";
     }
 
 }
