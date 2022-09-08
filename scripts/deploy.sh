@@ -1,3 +1,5 @@
+#!/bin/bash
+
 REPOSITORY=/home/ubuntu/cicdprac
 cd $REPOSITORY
 
