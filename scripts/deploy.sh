@@ -3,7 +3,7 @@
 REPOSITORY=/home/ubuntu/cicdprac
 cd $REPOSITORY
 
-APP_NAME=curriculum #1
+APP_NAME=cicdprac #1
 JAR_NAME=$(ls $REPOSITORY/build/libs/ | grep '.jar' | tail -n 1)
 JAR_PATH=$REPOSITORY/build/libs/$JAR_NAME
 
@@ -19,4 +19,4 @@ else
 fi
 
 echo "> $JAR_PATH 배포" #3
-nohup java -jar /home/ubuntu/cicdprac/build/libs/curriculum-1.0.jar --spring.config.location=/home/cicdprac/application.yml > /dev/null 2> /dev/null < /dev/null &
+nohup java -jar /home/ubuntu/cicdprac/build/libs/cicdprac-1.0.jar --spring.config.location=/home/cicdprac/application.yml > /dev/null 2> /dev/null < /dev/null &
