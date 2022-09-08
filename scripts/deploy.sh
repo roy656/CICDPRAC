@@ -1,4 +1,4 @@
-REPOSITORY=/home/ec2-user/app
+REPOSITORY=/home/ubuntu/cicdprac
 cd $REPOSITORY
 
 APP_NAME=curriculum #1
@@ -17,4 +17,4 @@ else
 fi
 
 echo "> $JAR_PATH 배포" #3
-nohup java -jar /home/ec2-user/app/build/libs/curriculum-1.0.jar --spring.config.location=/home/ec2-user/application.yml > /dev/null 2> /dev/null < /dev/null &
+nohup java -jar /home/ubuntu/cicdprac/build/libs/curriculum-1.0.jar --spring.config.location=/home/cicdprac/application.yml > /dev/null 2> /dev/null < /dev/null &
