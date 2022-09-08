@@ -42,7 +42,7 @@ jobs:
       
       
     - name: Make zip file
-      run: zip -r ./$GITHUB_SHA.zip .
+      run: zip -qq -r ./$GITHUB_SHA.zip .
       shell: bash
       working-directory: ${{env.working-directory}}
 
